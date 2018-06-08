@@ -30,7 +30,7 @@ Just below the buttons, there's a form called **Register with us**.
 
 Continue working in `./js/main.js` to add the following functionality:
 
-When the submit button is pressed, it should check that all the form fields are valid:
+:
 - The **Your name**, **Email** and **Describe yourself** fields need to be non-empty (Hint: their `value` length has to be greater than zero)
 - For the **Email** field also check if it contains the `@` character
 

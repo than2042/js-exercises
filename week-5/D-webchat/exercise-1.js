@@ -32,6 +32,21 @@ Expected result
 When you open index.html in your browser, it should display the existing messages on the page.
 
 */
+var displayMessages = document.querySelector("#message-list")
+fetch("https://codeyourfuture.herokuapp.com/api/messages").then(function(message){
+    return message.json();
+
+}).then(function(chats) {
+    console.log(chats);
+    var displayMessages = document.querySelector("#message-list");
+    for (var i = 0; i < chats.length; i++) {
+        displayMessages.innerHTML += "<p>" + chats[i].content + "<p>"
+
+   
+    }
+});
+
+setInterval(callback, 2000);
 
 
 // Write your code here
